@@ -1,1 +1,7 @@
 # dataexplorer
+
+The goal of this project is to try to give you experience of using statistics in a practical setting.The main idea is to find a data set you find interesting, and to summarize it and make some
+inferences.
+Data analysis is a process used to inspect, clean, transform and remodel data with a view to reach to a certain conclusion for a given situation.When it comes to data, it could be transactional data, web data, sensor data etc... All these put together forms Big Data and when data is huge, it is difficult to analyze by humans and use it for the business goal that an organization is trying to achieve.
+This project tries to give the user an experience to view the data quality and the characteristics of the data visually and graphically, which allows to clean data and ignore the fields that does not help in achieving the business objective.
+Once the data analysis is performed, these fields could be used to build a predictive model which could be used to evaluate the business problem and solve it much more easier than any human could do.Eg: If we have a data set of customers of a telecom company who are using a certain product of company, we could do the data analysis on these set of customers and clean the data and then this can be used to build a model which could predict the likelihood of a customer leaving the company/quitting the usage of product. By knowing the probability of a customer leaving a company, the company can provide him an offer which could retain the customer in the same company instead of making the customer to leave.
