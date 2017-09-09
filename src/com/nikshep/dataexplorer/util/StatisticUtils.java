@@ -19,7 +19,7 @@ public class StatisticUtils {
 	 */
 	public static Outlier getOutliers(double[] data){
 		
-		DescriptiveStatistics statistics = new DescriptiveStatistics(data); //imported from commons-math from apache
+		DescriptiveStatistics statistics = new DescriptiveStatistics(data);
 		
 		double q1 = statistics.getPercentile(25);
 		double q3 = statistics.getPercentile(75);
@@ -35,7 +35,7 @@ public class StatisticUtils {
 		 * 		lowerRange = q1-1.5*iqr
 		 * 		upperRange = q3+1.5*iqr
 		 */
-		List<Integer> outlierIndicesList = new ArrayList<Integer>(); //collections - List and ArrayList 
+		List<Integer> outlierIndicesList = new ArrayList<Integer>();
 		for (int index=0; index<data.length; index++) {
 			double d = data[index];
 			
@@ -74,8 +74,7 @@ public class StatisticUtils {
 	public static boolean isMissingValue(double point) {
 		boolean missing = false;
 		
-		if(point == Double.NaN || point == Double.POSITIVE_INFINITY) { //NaN (not a number) and positive_infinity for checking an empty value of the field
-			
+		if(point == Double.NaN || point == Double.POSITIVE_INFINITY) {
 			missing = true;
 		}
 		
